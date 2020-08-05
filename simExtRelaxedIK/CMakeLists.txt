@@ -15,14 +15,11 @@ find_package(Boost REQUIRED)
 #set(CMAKE_AUTOMOC ON)
 #add_definitions(-DQT_COMPIL)
 
-#hard code
-set(LIBPLUGIN_DIR /home/haochen/Tools/CoppeliaSim_Edu_V4_1_0_Ubuntu18_04/programming/libPlugin)
-
 if(NOT LIBPLUGIN_DIR)
     if(DEFINED ENV{COPPELIASIM_ROOT_DIR})
         set(LIBPLUGIN_DIR $ENV{COPPELIASIM_ROOT_DIR}/programming/libPlugin)
     else()
-        set(LIBPLUGIN_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../libPlugin)
+        set(LIBPLUGIN_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../../programming/libPlugin)
     endif()
 endif()
 set(CMAKE_MODULE_PATH

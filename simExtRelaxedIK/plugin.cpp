@@ -57,17 +57,13 @@ public:
         }
         out->solution = sol;
 
-        log(sim_verbosity_infos, std::to_string(x.length));
-
         std::ostringstream sol_str; 
         if (!out->solution.empty()) 
         { 
             sol_str << "RelaxedIK: [";
-
             // Convert all but the last element to avoid a trailing "," 
             std::copy(out->solution.begin(), out->solution.end() - 1, 
                 std::ostream_iterator<double>(sol_str, ", ")); 
-        
             // Now add the last element with no delimiter 
             sol_str << out->solution.back() << "]";
         } 
