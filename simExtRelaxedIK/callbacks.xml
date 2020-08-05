@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml-stylesheet type="text/xsl" href="callbacks.xsl"?>
+
+<plugin name="RelaxedIK" short-name="RelaxedIK" author="">
+    <description>A plugin to run Relaxed IK in CoppeliaSim</description>
+    <command name="solve">
+        <description>Return a joint angle solution given the goal position and rotation.</description>
+        <params>
+            <param name="position" type="table" item-type="double">
+                <description>The goal position</description>
+            </param>
+            <param name="rotation" type="table" item-type="double">
+                <description>The goal rotation</description>
+            </param>
+        </params>
+        <return>
+            <param name="solution" type="table" item-type="double">
+                <description>The joint angle solution</description>
+            </param>
+        </return>
+    </command>
+</plugin>
