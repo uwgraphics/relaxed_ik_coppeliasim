@@ -12,7 +12,7 @@ function sysCall_threadmain()
         quat = {0.0,0.0,0.0,1.0}
 
         while true do
-            xopt = simRelaxedIK.solve(pos, quat)
+            xopt = simRelaxedIK.solveIK(pos, quat)
         end
     else
         sim.displayDialog('Error','The RelaxedIK plugin was not found.',

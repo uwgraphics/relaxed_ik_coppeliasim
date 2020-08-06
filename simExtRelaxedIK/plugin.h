@@ -44,7 +44,7 @@ extern "C" {
             int length;
     };
 
-    Opt run_coppeliasim(double* pos_arr, int pos_length, double* quat_arr, int quat_length);
+    Opt solve(double* pos_arr, int pos_length, double* quat_arr, int quat_length);
 #ifdef __cplusplus
 }
 #endif

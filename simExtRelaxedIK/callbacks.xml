@@ -3,7 +3,7 @@
 
 <plugin name="RelaxedIK" short-name="RelaxedIK" author="">
     <description>A plugin to run Relaxed IK in CoppeliaSim</description>
-    <command name="solve">
+    <command name="solveIK">
         <description>Return a joint angle solution given the goal position and rotation.</description>
         <params>
             <param name="position" type="table" item-type="double">

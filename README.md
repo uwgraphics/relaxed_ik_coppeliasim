@@ -37,9 +37,9 @@ luafilesystem:
     cmake --build .
     ```
 1. Go to relaxed_ik_coppeliasim/relaxed_ik_core/config/loaded_robot and configure the name of the pre-computed robot arm you would like to run (available options are baxter, hubo, iiwa7, jaco7, panda, sawyer, ur5 and yumi).
-1. Launch CoppeliaSim and include the code in relaxed_ik_coppeliasim/childScriptExample.lua in the threaded child script of your robot arm. 
+1. Launch CoppeliaSim and include the code in relaxed_ik_coppeliasim/example.lua in the threaded child script of your robot arm. 
 1. As the only callable function in this RelaxedIK plugin, the following function call takes in a position goal (pos: a table of doubles) and a rotation goal (quat: a table of doubles) and returns a joint angle solution (xopt: also a table of doubles). Usually you want to put it in a loop in order to update the joint angles consistently.
     ```lua
-    xopt = simRelaxedIK.solve(pos, quat)
+    xopt = simRelaxedIK.solveIK(pos, quat)
     ```
 1. Start the simulation in CoppeliaSim!

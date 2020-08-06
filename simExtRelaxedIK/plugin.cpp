@@ -45,12 +45,12 @@ public:
         setBuildDate(BUILD_DATE);
     }
 
-    void solve(solve_in *in, solve_out *out)
+    void solveIK(solveIK_in *in, solveIK_out *out)
     {
         std::vector<double> pos = in->position;
         std::vector<double> quat = in->rotation;
 
-        Opt x = run_coppeliasim(pos.data(), (int) pos.size(), quat.data(), (int) quat.size());
+        Opt x = solve(pos.data(), (int) pos.size(), quat.data(), (int) quat.size());
         std::vector<double> sol(x.length, 0.0);
         for (int i = 0; i < x.length; i++) {
             sol[i] = x.data[i];
@@ -60,7 +60,7 @@ public:
         std::ostringstream sol_str; 
         if (!out->solution.empty()) 
         { 
-            sol_str << "RelaxedIK: [";
+            sol_str << "[";
             // Convert all but the last element to avoid a trailing "," 
             std::copy(out->solution.begin(), out->solution.end() - 1, 
                 std::ostream_iterator<double>(sol_str, ", ")); 
