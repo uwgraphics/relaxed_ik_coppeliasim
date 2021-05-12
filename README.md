@@ -1,12 +1,15 @@
 # Relaxed IK Coppeliasim
 
+## Introduction
+
 This repo is a Relaxed IK plugin for CoppeliaSim. Although it’s possible to access the ROS1 wrapper of Relaxed IK in CoppeliaSim through ROS topics and params, it might be more convenient to directly access Relaxed IK in the form of a CoppeliaSim Pluggin. That’s where the inspiration of this wrapper comes from.
 
-## Relaxed IK Wrappers
+## Relaxed IK Family
 
 More information about Relaxed IK, Collision IK, and all the wrappers could be found in this [documentation](https://uwgraphics.github.io/relaxed_ik_core/).
 
 - [Relaxed IK (Deprecated)](https://github.com/uwgraphics/relaxed_ik/tree/dev)
+- [Relaxed IK Core](https://github.com/uwgraphics/relaxed_ik_core)
 - [Relaxed IK ROS1](https://github.com/uwgraphics/relaxed_ik_ros1)
 - [Relaxed IK Unity](https://github.com/uwgraphics/relaxed_ik_unity)
 - [Relaxed IK CoppeliaSim](https://github.com/uwgraphics/relaxed_ik_coppeliasim)
