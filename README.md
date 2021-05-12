@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repo is a Relaxed IK plugin for CoppeliaSim. Although it’s possible to access the ROS1 wrapper of Relaxed IK in CoppeliaSim through ROS topics and params, it might be more convenient to directly access Relaxed IK in the form of a CoppeliaSim Pluggin. That’s where the inspiration of this wrapper comes from.
+This repo is a Relaxed IK plugin for CoppeliaSim. Although it’s possible to access the ROS1 wrapper of Relaxed IK in CoppeliaSim through ROS topics and params, it might be more convenient to directly access Relaxed IK in the form of a CoppeliaSim Pluggin. That’s where the inspiration of this wrapper comes from. Note that this wrapper is developed in CoppeliaSim Edu V4.1.0 and Ubuntu 18.04. 
 
 ## Relaxed IK Family
 
