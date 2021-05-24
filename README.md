@@ -52,7 +52,7 @@ The version of cmake should be 3.16.3 or higher.
         ```bash
         cargo build
         ```
-1. Look at <settings.yaml> in the folder *relaxed_ik_core/config* and follow the instructions there to customize the parameters, change the input device, and manage the environment obstacles. Note that you don't need to recompile *relaxed_ik_core* every time you change the parameters in <settings.yaml>.
+1. Go to *relaxed_ik_core/config/loaded_robot* and type the name of the info file of the robot arm you would like to run. For example, if you would like to work with ur5, type "ur5_info.yaml". Available robots are baxter, hubo, iiwa7, jaco7, panda, sawyer, ur5, and yumi.
 1. Complie the CoppeliaSim plugin of RelaxedIK with cmake (3.16.3 or higher required) by running the following commands from the root directory of this repo. Please check the version of your cmake and update it if necessary before compiling the plugin:
     ```bash
     cd ./simExtRelaxedIK
